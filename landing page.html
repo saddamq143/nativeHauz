@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Native Haus – Jumeirah Village Triangle (JVT), Dubai | Native Haus</title>
+<meta name="description" content="Native Haus is an off-plan development in Jumeirah Village Triangle (JVT), Dubai by Native Avighna Property LLC. Prices from AED 699K. Handover Q3 2029. See unit availability, payment plans and brochures."/>
+<meta property="og:title" content="Native Haus – Jumeirah Village Triangle (JVT), Dubai | Native Haus"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Native Haus"/>
+<meta property="og:image" content="images/hero.jpeg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"/>
+<style>
+:root{
+  --obg-navy:#0A1940;
+  --obg-sand:#B3986A;
+  --obg-blue:#1E5DB3;
+  --obg-line:#CBD5E1;
+  --obg-bg:#F5F7FA;
+  --obg-muted:#5E6B82;
+  --obg-faint:#8C99AD;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#fff;color:var(--obg-navy);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button{font-family:inherit}
+@keyframes obgFade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--obg-line)}
+.nav-in{max-width:1200px;margin:0 auto;padding:0 20px;height:62px;display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;cursor:pointer}
+.brand img{display:block;height:38px;width:auto;object-fit:contain}
+.brand-fallback{width:38px;height:38px;border-radius:9px;background:var(--obg-navy);color:#fff;display:grid;place-items:center;font:700 14px Inter}
+.brand-name{font:700 15px Inter,sans-serif;letter-spacing:-.01em;color:var(--obg-navy)}
+.nav-desktop{display:flex;align-items:center;gap:4px}
+.nav-desktop a,.nav-desktop button{padding:7px 12px;border-radius:8px;font:600 13.5px Inter;color:var(--obg-muted);background:transparent;border:none;text-decoration:none;cursor:pointer}
+.nav-desktop button{font-weight:500}
+.nav-desktop a:hover,.nav-desktop button:hover{background:var(--obg-bg);color:var(--obg-navy)}
+.nav-burger{display:none;width:44px;height:44px;border-radius:10px;border:1px solid var(--obg-line);background:#fff;align-items:center;justify-content:center;cursor:pointer}
+.nav-mobile{display:none;border-top:1px solid var(--obg-line);background:#fff;padding:8px 20px 16px}
+.nav-mobile.open{display:block}
+.nav-mobile a{display:flex;align-items:center;min-height:48px;font:600 15px Inter;color:var(--obg-navy);text-decoration:none;border-bottom:1px solid var(--obg-bg)}
+
+/* HERO */
+.hero-wrap{position:relative}
+.hero{height:440px;position:relative;overflow:hidden;background:repeating-linear-gradient(135deg,rgba(255,255,255,.4) 0 1px,transparent 1px 26px),linear-gradient(150deg,#F5F7FA,#E7EBF0)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:44% 68%}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,14,26,.35) 0%,rgba(10,14,26,.45) 45%,rgba(10,14,26,.85) 100%)}
+.pad{padding-left:28px;padding-right:28px}
+.hero-top{position:absolute;top:0;left:0;right:0;max-width:1200px;margin:0 auto;padding:20px 28px}
+.back-btn{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-radius:10px;padding:12px 16px 12px 13px;cursor:pointer;min-height:44px;font:600 13px Inter;color:var(--obg-navy);box-shadow:0 2px 8px rgba(16,29,56,.12);border:none}
+.caption{position:absolute;left:0;right:0;bottom:0;color:#fff}
+.caption-in{max-width:1200px;margin:0 auto;padding:0 28px 34px}
+.title{font:700 46px/1.02 Inter;letter-spacing:-.025em;color:#fff;max-width:820px;text-wrap:balance;margin:0}
+.loc{display:flex;align-items:center;gap:8px;margin-top:12px;font:500 15px Inter;color:rgba(255,255,255,.9);flex-wrap:wrap}
+.loc a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.45)}
+.desc{margin-top:14px;max-width:720px;font:400 15px/1.55 Inter;color:rgba(255,255,255,.9);text-shadow:0 1px 12px rgba(16,29,56,.55)}
+.hero-actions{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.cta{display:flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:14px 22px;border-radius:12px;font:600 15px Inter;text-decoration:none;cursor:pointer;border:none}
+.cta-sand{background:var(--obg-sand);color:#fff;box-shadow:0 8px 22px rgba(179,152,106,.4)}
+.cta-white{background:rgba(255,255,255,.94);color:var(--obg-navy);box-shadow:0 4px 14px rgba(16,29,56,.18)}
+.cta-outline{background:rgba(255,255,255,.94);color:var(--obg-navy);border:1.5px solid #C9A56C;padding:13px 22px;box-shadow:0 4px 14px rgba(16,29,56,.18);height:48px}
+.brochure-box{display:flex;flex-direction:column;gap:6px}
+.brochure-row{position:relative;display:flex;gap:8px;flex-wrap:wrap}
+.choose{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:var(--obg-navy);font:600 13.5px Inter;padding:14px 16px;border-radius:12px;border:none;cursor:pointer;box-shadow:0 4px 14px rgba(16,29,56,.18)}
+.choose svg{transition:transform .15s}
+.choose.open svg{transform:rotate(180deg)}
+.brochure-menu{display:none;position:absolute;top:calc(100% + 6px);left:0;min-width:300px;background:#fff;border:1px solid var(--obg-line);border-radius:12px;box-shadow:0 12px 32px rgba(16,29,56,.2);padding:6px;z-index:20}
+.brochure-menu.open{display:block}
+.brochure-menu button{display:flex;justify-content:space-between;gap:14px;width:100%;text-align:left;padding:12px 12px;border-radius:8px;border:none;background:transparent;font:500 14px Inter;color:var(--obg-navy);cursor:pointer;min-height:44px;align-items:center}
+.brochure-menu button:hover,.brochure-menu button.sel{background:var(--obg-bg)}
+.brochure-menu small{color:var(--obg-faint);font:400 12px Inter}
+.selected{font:500 11.5px Inter;color:rgba(255,255,255,.85)}
+.selected strong{color:#fff}
+
+/* BLOCKS */
+.block{max-width:1200px;margin:0 auto;padding:28px 28px 0}
+.block.tight{padding-top:20px}
+.facts{background:#fff;border:1px solid var(--obg-line);border-radius:18px;padding:6px 4px;display:grid;grid-template-columns:repeat(5,1fr);box-shadow:0 2px 8px #E7EBF0}
+.fact{padding:18px 22px;border-right:1px solid var(--obg-line)}
+.fact:last-child{border-right:none}
+.fact .k{font:500 11px Inter;letter-spacing:.06em;text-transform:uppercase;color:var(--obg-faint)}
+.fact .v{font:600 18px Inter;letter-spacing:-.01em;color:var(--obg-navy);margin-top:6px}
+.card-row{background:#fff;border:1px solid var(--obg-line);border-radius:18px;padding:18px 22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:space-between}
+.card-row.shadow{box-shadow:0 2px 8px #E7EBF0}
+.eyebrow{font:600 11px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--obg-sand)}
+.card-h{font:600 18px Inter;color:var(--obg-navy);margin-top:4px}
+.card-p{font:400 13px Inter;color:var(--obg-muted);margin-top:4px}
+.btn-sand{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;min-height:44px;border-radius:10px;background:var(--obg-sand);color:#fff;font:600 13.5px Inter;text-decoration:none;box-shadow:0 4px 12px rgba(179,152,106,.3);border:none;cursor:pointer}
+
+/* SLIDER */
+.slider{position:relative;width:100%;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:var(--obg-navy);box-shadow:0 8px 32px rgba(16,29,56,.12)}
+.slider .slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s ease}
+.slider .slide.on{opacity:1}
+.slide-ph{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;display:grid;place-items:center;color:rgba(255,255,255,.55);font:600 15px Inter}
+.slide-ph.on{opacity:1}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:99px;border:none;cursor:pointer;background:rgba(16,29,56,.72);color:#fff;font:600 18px Inter;display:grid;place-items:center}
+.arrow.l{left:8px}.arrow.r{right:8px}
+.dots{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:6px}
+.dots button{width:8px;height:8px;border-radius:99px;border:none;cursor:pointer;background:rgba(255,255,255,.5);transition:width .25s ease;padding:0}
+.dots button.on{width:22px;background:#fff}
+
+/* CONTENT */
+.content{max-width:1200px;margin:0 auto;padding:44px 28px 60px}
+.plan{margin-bottom:40px;background:#fff;border:1px solid var(--obg-line);border-radius:16px;padding:24px}
+.plan-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.plan h2,.dl-h{font:600 20px Inter;letter-spacing:-.015em;color:var(--obg-navy);margin:0}
+.pill{display:inline-block;background:#f6f2e9;color:var(--obg-blue);font:700 13px Inter;letter-spacing:.04em;padding:6px 12px;border-radius:99px}
+.tbl-wrap{margin-top:18px;overflow:auto;border-radius:12px;border:1px solid var(--obg-line)}
+table{width:100%;border-collapse:collapse;font:400 14px Inter;min-width:520px}
+th{font:600 11.5px Inter;letter-spacing:.06em;text-transform:uppercase;color:var(--obg-muted);padding:12px 16px;background:var(--obg-bg);text-align:left}
+td{padding:14px 16px;font:500 14px Inter;color:var(--obg-navy);vertical-align:top;border-top:1px solid var(--obg-line)}
+tbody tr:first-child td{border-top:none}
+td.pct{font-weight:600;color:var(--obg-blue)}
+.dl-title{font:600 22px Inter;letter-spacing:-.015em;color:var(--obg-navy);margin:0}
+.dl-sub{font:400 13.5px Inter;color:var(--obg-faint);margin-top:2px}
+.downloads{margin-top:20px;column-count:2;column-gap:14px}
+.dl-card{break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;margin:0 0 14px;background:#fff;border:1px solid var(--obg-line);border-radius:14px;padding:16px}
+.dl-cat{font:600 12px Inter;letter-spacing:.06em;text-transform:uppercase;color:var(--obg-blue)}
+.dl-list{margin-top:10px;display:flex;flex-direction:column;gap:6px}
+.dl-list a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px;min-height:48px;border-radius:10px;background:var(--obg-bg);text-decoration:none;color:var(--obg-navy);font:500 14px Inter}
+.dl-list a:hover{background:#E7EBF0}
+.dl-list span+span{color:var(--obg-faint);font:400 12px Inter;white-space:nowrap}
+.contact{margin-top:44px;background:var(--obg-navy);color:#fff;border-radius:18px;padding:26px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.contact .eyebrow{color:rgba(255,255,255,.55)}
+.contact h3{font:600 22px Inter;letter-spacing:-.01em;margin:6px 0 0}
+.contact p{font:400 14px Inter;color:rgba(255,255,255,.72);margin:4px 0 0}
+.contact-btns{display:flex;gap:8px;flex-wrap:wrap}
+.contact-btns a{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;min-height:46px;border-radius:10px;background:var(--obg-bg);color:var(--obg-navy);font:600 14px Inter;text-decoration:none}
+.contact-btns a.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
+.qr{margin-top:44px;background:#fff;border:1px solid var(--obg-line);border-radius:16px;padding:24px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.qr-box{width:148px;height:148px;background:#fff;border:1px solid var(--obg-line);border-radius:10px;padding:8px;display:grid;place-items:center;text-align:center;font:500 12px Inter;color:var(--obg-faint)}
+.qr-box img{width:100%;height:100%;object-fit:contain}
+.qr-body{flex:1;min-width:220px}
+.qr-h{font:600 20px Inter;letter-spacing:-.01em;color:var(--obg-navy);margin-top:4px}
+.qr-rera{margin-top:8px;font:600 14px Inter;color:var(--obg-navy)}
+.qr-rera span{color:var(--obg-blue)}
+.qr-p{margin:6px 0 0;font:400 14px/1.55 Inter;color:var(--obg-muted);max-width:480px}
+
+/* FOOTER */
+footer{margin-top:60px;background:var(--obg-navy);color:rgba(255,255,255,.82)}
+.f-grid{max-width:1200px;margin:0 auto;padding:48px 28px 28px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
+.f-brand{font:700 18px Inter;color:#fff;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.f-brand img{height:34px;width:auto}
+.f-about{font:400 13px/1.6 Inter;color:rgba(255,255,255,.7);margin:0;max-width:380px}
+.f-h{font:600 12px Inter;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:10px}
+.f-col{display:flex;flex-direction:column;gap:6px;font:400 13.5px Inter}
+.f-col a{color:rgba(255,255,255,.85);text-decoration:none}
+.f-col a.sand{color:#e7dcc4}
+.f-col .m{color:rgba(255,255,255,.6)}
+.f-addr{font:400 13.5px/1.6 Inter;color:rgba(255,255,255,.75)}
+.f-disc{border-top:1px solid rgba(255,255,255,.08);padding:18px 28px;max-width:1200px;margin:0 auto}
+.f-disc .t{font:600 11px Inter;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:6px}
+.f-disc .b{font:400 12.5px/1.65 Inter;color:rgba(255,255,255,.65)}
+.f-copy{border-top:1px solid rgba(255,255,255,.08);padding:14px 28px;max-width:1200px;margin:0 auto;font:400 11.5px Inter;color:rgba(255,255,255,.45);display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.f-copy a{color:rgba(255,255,255,.6);text-decoration:none}
+
+
+/* DOWNLOAD GATE MODAL */
+.modal-bg{position:fixed;inset:0;z-index:90;background:rgba(10,25,64,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:16px;overflow:auto}
+.modal-bg.open{display:flex}
+.modal{background:#fff;border-radius:18px;width:100%;max-width:440px;padding:26px 24px 22px;box-shadow:0 24px 64px rgba(10,25,64,.35);margin:auto;animation:obgFade .25s ease both}
+.modal h3{font:700 21px Inter;letter-spacing:-.015em;color:var(--obg-navy);margin:0}
+.modal .sub{font:400 14px/1.5 Inter;color:var(--obg-muted);margin:8px 0 18px}
+.fld{margin-bottom:14px}
+.fld label{display:block;font:600 13.5px Inter;color:var(--obg-muted);margin-bottom:6px}
+.fld label small{font:500 12.5px Inter;color:var(--obg-faint)}
+.fld input,.fld select{width:100%;height:48px;border:1px solid var(--obg-line);border-radius:12px;padding:0 14px;font:400 15px Inter;color:var(--obg-navy);background:#fff;outline:none}
+.fld input::placeholder{color:#A9B4C5}
+.fld input:focus,.fld select:focus{border-color:var(--obg-blue);box-shadow:0 0 0 3px rgba(30,93,179,.15)}
+.fld.err input,.fld.err select{border-color:#D14343}
+.fld .em{display:none;font:500 12px Inter;color:#D14343;margin-top:4px}
+.fld.err .em{display:block}
+.phone-row{display:grid;grid-template-columns:128px 1fr;gap:10px}
+.m-btn{width:100%;min-height:48px;border-radius:12px;font:700 15px Inter;cursor:pointer}
+.m-primary{background:var(--obg-navy);color:#fff;border:none;margin-top:6px}
+.m-primary:hover{background:#12265c}
+.m-ghost{background:#fff;color:var(--obg-navy);border:1.5px solid var(--obg-line);margin-top:10px}
+.m-ghost:hover{background:var(--obg-bg)}
+
+/* TOAST */
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--obg-navy);color:#fff;font:500 13.5px Inter;padding:12px 18px;border-radius:10px;opacity:0;pointer-events:none;transition:all .25s;z-index:100;box-shadow:0 8px 24px rgba(16,29,56,.3)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* MOBILE */
+@media (max-width:720px){
+  .nav-desktop{display:none!important}
+  .nav-burger{display:inline-flex}
+  .hero{height:240px}
+  .hero-shade{background:linear-gradient(180deg,rgba(10,14,26,.4) 0%,rgba(10,14,26,.6) 100%)}
+  .caption{position:static;background:var(--obg-navy)}
+  .caption-in{padding:22px 16px 26px}
+  .title{font:700 30px/1.05 Inter;letter-spacing:-.02em}
+  .pad,.block,.content,.hero-top{padding-left:16px!important;padding-right:16px!important}
+  .facts{grid-template-columns:repeat(2,1fr)}
+  .fact{border-right:none;border-bottom:1px solid var(--obg-line)}
+  .downloads{column-count:1}
+  .contact{grid-template-columns:1fr}
+  .cta,.hero-actions>div,.brochure-row{width:100%}
+  .brochure-row .cta{flex:1}
+  .brochure-menu{min-width:0;width:100%}
+  .f-grid{grid-template-columns:1fr}
+  .block{padding-top:20px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="obg-root">
+
+<!-- NAV -->
+<div class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#">
+      <img id="logo" alt="Native Haus logo" style="display:none"/>
+      <div class="brand-fallback" id="logoFallback">NH</div>
+      <div class="brand-name">Native Haus</div>
+    </a>
+    <div style="flex:1"></div>
+    <div class="nav-desktop">
+      <a href="#">Guides</a>
+      <a href="#">Compare</a>
+      <a href="#">Downloads</a>
+      <a href="#">Ask AI</a>
+      <a href="#">Contact</a>
+    </div>
+    <button type="button" class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0A1940" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="#">Guides</a><a href="#">Compare</a><a href="#">Downloads</a><a href="#">Ask AI</a><a href="#">Contact</a>
+  </div>
+</div>
+
+<div style="animation:obgFade .35s ease both">
+
+  <!-- HERO -->
+  <div class="hero-wrap">
+    <div class="hero">
+      <img id="cover" alt="Native Haus — Jumeirah Village Triangle (JVT), Dubai off-plan development" width="1600" height="880" style="display:none"/>
+      <div class="hero-shade"></div>
+      <div class="hero-top">
+      </div>
+    </div>
+    <div class="caption"><div class="caption-in">
+      <h1 class="title">Native Haus</h1>
+      <div class="loc">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+        <a id="mapLink" href="#" target="_blank" rel="noreferrer">Jumeirah Village Triangle (JVT), Dubai</a>
+        <span>· by Native Avighna Property LLC</span>
+      </div>
+      <p class="desc">A contemporary residential development in Jumeirah Village Triangle where every residence, interior detail and shared space has been thoughtfully considered to support the rhythm of everyday life; from focus and movement to stillness, connection and recovery. Because a meaningful home doesn’t simply occupy space. It becomes part of how you live.</p>
+      <div class="hero-actions">
+        <div class="brochure-box">
+          <div class="brochure-row">
+            <a id="brochureBtn" class="cta cta-sand" href="#" data-dl="1">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg>
+              <span id="brochureLabel">Download Native Haus - Project Brochure</span>
+            </a>
+            <button type="button" class="choose" id="chooseBtn" aria-label="Choose another brochure">
+              Choose (<span id="brochureCount">3</span>)
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="brochure-menu" id="brochureMenu"></div>
+          </div>
+          <div class="selected">Selected: <strong id="selName"></strong> · <span id="selSize"></span></div>
+        </div>
+        <button type="button" class="cta cta-outline" id="shareBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v13"/></svg>
+          Share
+        </button>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- FACTS -->
+  <div class="block pad">
+    <div class="facts">
+      <div class="fact"><div class="k">Price from</div><div class="v">AED 699K</div></div>
+      <div class="fact"><div class="k">Unit mix</div><div class="v">Studio, 1BR &amp; 2BR</div></div>
+      <div class="fact"><div class="k">Handover</div><div class="v">Q3 2029</div></div>
+      <div class="fact"><div class="k">Service charges</div><div class="v">AED 13 - 15 per sq.ft.</div></div>
+      <div class="fact"><div class="k">Status</div><div class="v">Collecting EOIs</div></div>
+    </div>
+  </div>
+
+  <!-- RENDERS -->
+  <div class="block tight pad">
+    <div class="card-row">
+      <div style="min-width:0">
+        <div class="eyebrow">Marketing renders</div>
+        <div class="card-h">Open the renders folder</div>
+        <div class="card-p">Use Google Drive's “Download all” to save every render as a zip.</div>
+      </div>
+      <button type="button" class="btn-sand" id="driveBtn">Open Drive folder ↗</button>
+    </div>
+  </div>
+
+  <!-- SPECIAL LINKS -->
+  <div class="block pad">
+    <div class="card-row shadow">
+      <div style="min-width:0">
+        <div class="eyebrow">Special Links</div>
+        <div class="card-h" style="font-size:17px">Project tools and resources</div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <a id="eoiBtn" class="btn-sand" style="box-shadow:none" href="#" target="_blank" rel="noopener noreferrer">Submit EOI ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDER -->
+  <div class="block pad">
+    <div class="slider" id="slider">
+      <button type="button" class="arrow l" aria-label="Previous image" id="prev">‹</button>
+      <button type="button" class="arrow r" aria-label="Next image" id="next">›</button>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content pad">
+    <div class="plan">
+      <div class="plan-head"><h2>Payment plan</h2><span class="pill" id="planPill">30:70</span></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Milestone</th><th>Payment %</th><th>Payment schedule</th><th>Payment date</th></tr></thead>
+          <tbody id="planBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2 class="dl-title">Download centre</h2>
+    <div class="dl-sub">Everything for Native Haus</div>
+    <div class="downloads" id="downloads"></div>
+
+    <div class="contact">
+      <div>
+        <div class="eyebrow">Talk to sales</div>
+        <h3>Have a question about Native Haus?</h3>
+        <p>Mon - Fri, 9:00 AM - 18:00 PM</p>
+      </div>
+      <div class="contact-btns">
+        <a href="tel:+971588697223">Call +971 58 869 7223</a>
+        <a href="https://wa.me/971588697223" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a href="mailto:pnncapitalrealestate@gmail.com">Email</a>
+        <a class="ghost" href="#">All contacts</a>
+      </div>
+    </div>
+
+    <div class="qr">
+      <div class="qr-box" id="qrBox"><span>QR code<br>placeholder</span></div>
+      <div class="qr-body">
+        <div class="eyebrow">Regulatory authority</div>
+        <div class="qr-h">Verified project QR code</div>
+        <div class="qr-rera">Project RERA Number: <span id="rera">4535</span></div>
+        <p class="qr-p">Scan to verify this project's regulatory permit and disclosure as required by UAE real estate authorities.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-grid">
+    <div>
+      <div class="f-brand"><img id="footLogo" alt="" style="display:none"/><span id="footName">Native Haus</span></div>
+      <p class="f-about">Native Haus provides project information, availability, payment plans, comparisons, downloadable sales material and investor support resources.</p>
+    </div>
+    <div>
+      <div class="f-h">Get in touch</div>
+      <div class="f-col">
+        <a href="https://wa.me/971588697223" target="_blank" rel="noreferrer">WhatsApp: +971 58 869 7223</a>
+        <a href="mailto:pnncapitalrealestate@gmail.com">pnncapitalrealestate@gmail.com</a>
+        <div class="m">Mon - Fri, 9:00 AM - 18:00 PM</div>
+        <a class="sand" style="margin-top:8px" href="#">Full contact page →</a>
+        <a class="sand" href="#">About Native Haus →</a>
+        <a class="sand" href="#">Guides &amp; market reports →</a>
+      </div>
+    </div>
+    <div>
+      <div class="f-h">Explore</div>
+      <div class="f-col">
+        <a href="#">Community area guides</a><a href="#">Compare projects</a><a href="#">Downloads</a><a href="#">Ask AI — UAE real estate</a><a href="#">Site map</a>
+      </div>
+    </div>
+  </div>
+  <div class="f-disc">
+    <div class="t">Disclaimer</div>
+    <div class="b">Prices, payment plans, unit availability, layouts, dimensions, specifications, features, and other project information displayed on this website are provided for general informational purposes only and are indicative. All information is subject to availability, developer confirmation, and change at any time without prior notice. The broker makes no guarantee that the information displayed is current, complete, or final. Prospective purchasers should verify all relevant details before making any reservation, payment, or purchase decision.</div>
+  </div>
+  <div class="f-copy"><span>© <span id="yr">2026</span> Native Haus</span><a href="#">Privacy &amp; terms</a></div>
+</footer>
+</div>
+
+<div class="modal-bg" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+  <form class="modal" id="gateForm" novalidate>
+    <h3 id="gateTitle">Your details to download</h3>
+    <p class="sub" id="gateSub"></p>
+    <div class="fld" id="f-name"><label for="fName">Full name *</label><input id="fName" name="name" autocomplete="name"><div class="em">Please enter your full name.</div></div>
+    <div class="fld" id="f-email"><label for="fEmail">Email address *</label><input id="fEmail" name="email" type="email" autocomplete="email"><div class="em">Please enter a valid email address.</div></div>
+    <div class="fld" id="f-phone"><label for="fPhone">Mobile number *</label>
+      <div class="phone-row">
+        <select id="fCode" aria-label="Country code"></select>
+        <input id="fPhone" name="phone" type="tel" inputmode="tel" placeholder="50 123 4567" autocomplete="tel-national">
+      </div>
+      <div class="em">Please enter a valid mobile number.</div></div>
+    <div class="fld" id="f-type"><label for="fType">Type of client *</label>
+      <select id="fType"><option value="">Select...</option><option>Investor</option><option>End user</option><option>Real estate agent / broker</option><option>Other</option></select>
+      <div class="em">Please select a client type.</div></div>
+    <div class="fld"><label for="fAgent">Agent, if any <small>(optional)</small></label><input id="fAgent" name="agent" placeholder="Type your agent's name"></div>
+    <button type="submit" class="m-btn m-primary" id="gateSubmit">Unlock download</button>
+    <button type="button" class="m-btn m-ghost" id="gateCancel">Not now</button>
+  </form>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* =========================================================
+   CONFIG — edit this block only. Replace "" / "#" with real URLs.
+   ========================================================= */
+const CONFIG = {
+  logo: "",                    // logo URL (optional)
+  logoWhite: "",               // white logo for footer
+  cover: "images/hero.jpeg",                   // hero cover image URL (1600x880)
+  mapLink: "https://share.google/GJgjUJTPiBIFmsMg4",
+  eoiUrl: "https://obgcrm.my.site.com/EOI/s/?projectId=a1aNM002Hl1PfoCYIS",
+  driveFolderUrl: "",          // Google Drive renders folder
+  leadWebhook: "https://script.google.com/macros/s/AKfycbw3Ebji9qxOzpGDgkbZfWwsWStEb56vtFEK5YbjhcOfCK3lkbZ4gRKS4s7x75r1sDM8/exec",   // Google Apps Script Web App (creates sheet row + sends email)
+  accessDays: 0,               // 0 = show the form on every click. Set 90 to remember a visitor for 90 days
+  shareUrl: "",                // defaults to current page URL
+  qrImage: "images/qr.jpeg",
+  rera: "4535",                // <-- RERA number (update later)
+  slideCount: 8,               // images/1 ... images/8 in the images folder
+  slideExts: ["jpeg","jpg","png","webp"],   // extensions tried, in order, for each image
+  plan: {
+    label: "30:70",
+    rows: [
+      ["Upon booking","5%","Upon booking","—"],
+      ["1st Instalment","5%","Within 30 Days","—"],
+      ["2nd Instalment","10%","Within 60 Days","—"],
+      ["3rd Instalment","5%","June 2027","Jun 2027"],
+      ["4th Instalment","5%","January 2028","Jan 2028"],
+      ["Final Instalment","70%","Upon completion","Q3 2029"]
+    ]
+  },
+  downloads: [
+    { cat:"Brochure", items:[
+      { name:"Native Haus - Project Brochure", size:"3.2 MB", url:"downloads/Native_Haus_-_Project_Summary_-_Oct26.pdf", brochure:true },
+      { name:"Native Haus - Developer Profile", size:"5.2 MB", url:"#", brochure:true },
+      { name:"Avighna Corporate Profile", size:"7.5 MB", url:"#", brochure:true }
+    ]},
+    { cat:"Fact sheet", items:[
+      { name:"Native Haus - Factsheet", size:"10 MB", url:"#" },
+      { name:"Native Haus - Financial Factsheet", size:"370 KB", url:"#" }
+    ]},
+    { cat:"Full sales kit", items:[
+      { name:"Native Haus - Sales Pack", size:"1.6 MB", url:"#" },
+      { name:"Native Haus - Sales Process", size:"325 KB", url:"#" },
+      { name:"Native Haus - Documents Required", size:"316 KB", url:"#" }
+    ]},
+    { cat:"Project Manager Resources", items:[
+      { name:"Native Haus - Project Summary", size:"3.2 MB", url:"downloads/Native_Haus_-_Project_Summary_-_Oct26.pdf" },
+      { name:"Native Haus - Sales Presentation", size:"123 MB", url:"#" }
+    ]}
+  ]
+};
+
+/* ============ helpers ============ */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),2200)}
+
+/* ============ images ============ */
+if(CONFIG.logo){const l=$('logo');l.src=CONFIG.logo;l.style.display='block';$('logoFallback').style.display='none'}
+if(CONFIG.logoWhite){const l=$('footLogo');l.src=CONFIG.logoWhite;l.style.display='block';$('footName').style.display='none'}
+if(CONFIG.cover){const c=$('cover');c.src=CONFIG.cover;c.style.display='block'}
+$('mapLink').href = CONFIG.mapLink;
+$('eoiBtn').href = CONFIG.eoiUrl;
+$('rera').textContent = CONFIG.rera;
+if(CONFIG.qrImage){$('qrBox').innerHTML='<img src="'+esc(CONFIG.qrImage)+'" alt="Regulatory QR code for Native Haus" width="148" height="148" loading="lazy" decoding="async">'}
+$('yr').textContent = new Date().getFullYear();
+
+/* ============ mobile nav ============ */
+$('burger').addEventListener('click',()=>{
+  const m=$('mobileNav'),o=m.classList.toggle('open');
+  $('burger').setAttribute('aria-expanded',o);
+});
+
+/* ============ brochure picker ============ */
+const brochures = CONFIG.downloads.flatMap(g=>g.items.filter(i=>i.brochure));
+let selected = 0;
+function renderBrochure(){
+  const b=brochures[selected];
+  $('brochureBtn').href=b.url;
+  $('brochureBtn').dataset.name=b.name;
+  $('brochureLabel').textContent='Download '+b.name;
+  $('selName').textContent=b.name;
+  $('selSize').textContent=b.size;
+  $('brochureCount').textContent=brochures.length;
+  $('brochureMenu').innerHTML=brochures.map((x,i)=>
+    '<button type="button" data-i="'+i+'" class="'+(i===selected?'sel':'')+'"><span>'+esc(x.name)+'</span><small>'+esc(x.size)+'</small></button>').join('');
+}
+$('chooseBtn').addEventListener('click',e=>{
+  e.stopPropagation();
+  $('brochureMenu').classList.toggle('open');
+  $('chooseBtn').classList.toggle('open');
+});
+$('brochureMenu').addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  selected=+b.dataset.i;renderBrochure();
+  $('brochureMenu').classList.remove('open');$('chooseBtn').classList.remove('open');
+});
+document.addEventListener('click',()=>{$('brochureMenu').classList.remove('open');$('chooseBtn').classList.remove('open')});
+renderBrochure();
+
+/* ============ share ============ */
+function copyText(t){
+  try{
+    if(navigator.clipboard&&window.isSecureContext){return navigator.clipboard.writeText(t)}
+  }catch(e){}
+  return new Promise((res,rej)=>{
+    try{
+      const ta=document.createElement('textarea');ta.value=t;ta.style.cssText='position:fixed;opacity:0;top:0;left:0';
+      document.body.appendChild(ta);ta.select();
+      const ok=document.execCommand('copy');ta.remove();ok?res():rej(new Error('copy failed'));
+    }catch(e){rej(e)}
+  });
+}
+async function doShare(){
+  const url=CONFIG.shareUrl||location.href;
+  const isWeb=/^https?:\/\//i.test(url);          // file:// links must never go to navigator.share
+  if(isWeb&&navigator.share){
+    try{await navigator.share({title:document.title,url:url});return}
+    catch(e){if(e&&e.name==='AbortError')return}    // user closed the share sheet
+  }
+  try{await copyText(url);toast('Details shared')}
+  catch(e){toast('Details shared')}
+}
+$('shareBtn').addEventListener('click',()=>requestDownload({kind:'share',name:'Native Haus'}));
+
+/* ============ drive ============ */
+$('driveBtn').addEventListener('click',()=>{
+  if(CONFIG.driveFolderUrl) window.open(CONFIG.driveFolderUrl,'_blank','noopener');
+  else toast('Add your Drive folder URL in CONFIG');
+});
+
+/* ============ slider ============ */
+(function(){
+  const slider=$('slider'),dots=$('dots'),n=CONFIG.slideCount,exts=CONFIG.slideExts;
+  const anchor=slider.querySelector('.arrow');
+  const els=[];
+  for(let i=0;i<n;i++){
+    const el=document.createElement('img');
+    el.className='slide';el.alt='Native Haus — image '+(i+1);
+    el.loading=i?'lazy':'eager';el.decoding='async';
+    let k=0;
+    el.onerror=function(){
+      k++;
+      if(k<exts.length){el.src='images/'+(i+1)+'.'+exts[k];return}
+      const ph=document.createElement('div');ph.className='slide-ph'+(el.classList.contains('on')?' on':'');
+      ph.textContent='Native Haus — image '+(i+1);
+      const h=[215,222,35,200,160,260,25,190][i%8];
+      ph.style.background='linear-gradient(135deg,hsl('+h+',35%,22%),hsl('+((h+40)%360)+',30%,34%))';
+      el.replaceWith(ph);els[i]=ph;
+    };
+    el.src='images/'+(i+1)+'.'+exts[0];
+    slider.insertBefore(el,anchor);
+    els.push(el);
+  }
+  const ds=els.map((_,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Go to image '+(i+1));b.onclick=()=>{go(i);restart()};dots.appendChild(b);return b});
+  let cur=0,timer;
+  function go(i){
+    cur=(i+n)%n;
+    els.forEach((e,k)=>e.classList.toggle('on',k===cur));
+    ds.forEach((d,k)=>d.classList.toggle('on',k===cur));
+  }
+  function restart(){clearInterval(timer);if(!matchMedia('(prefers-reduced-motion:reduce)').matches)timer=setInterval(()=>go(cur+1),5000)}
+  $('prev').onclick=()=>{go(cur-1);restart()};
+  $('next').onclick=()=>{go(cur+1);restart()};
+  let sx=null;
+  slider.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
+  slider.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){go(cur+(dx<0?1:-1));restart()}sx=null});
+  go(0);restart();
+})();
+
+/* ============ payment plan ============ */
+$('planPill').textContent=CONFIG.plan.label;
+$('planBody').innerHTML=CONFIG.plan.rows.map(r=>
+  '<tr><td>'+esc(r[0])+'</td><td class="pct">'+esc(r[1])+'</td><td>'+esc(r[2])+'</td><td>'+esc(r[3])+'</td></tr>').join('');
+
+/* ============ downloads ============ */
+$('downloads').innerHTML=CONFIG.downloads.map(g=>
+  '<div class="dl-card"><div class="dl-cat">'+esc(g.cat)+'</div><div class="dl-list">'+
+  g.items.map(i=>'<a href="'+esc(i.url)+'" data-dl="1" data-name="'+esc(i.name)+'"><span>'+esc(i.name)+'</span><span>'+esc(i.size)+'</span></a>').join('')+
+  '</div></div>').join('');
+
+/* ============ download / share gate + Google Sheets ============ */
+(function(){
+  const KEY='nh_lead_v1', DAY=86400000;
+  const CODES=[["AE","+971"],["SA","+966"],["QA","+974"],["KW","+965"],["BH","+973"],["OM","+968"],["IN","+91"],["PK","+92"],["GB","+44"],["US","+1"],["RU","+7"],["CN","+86"],["EG","+20"],["DE","+49"],["FR","+33"]];
+  $('fCode').innerHTML=CODES.map(c=>'<option value="'+c[1]+'">'+c[0]+' '+c[1]+'</option>').join('');
+  const gate=$('gate'),form=$('gateForm');
+  let pending=null;
+
+  /* returns the saved lead if the visitor is still unlocked, else null */
+  function savedLead(){try{return JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){return null}}
+  function getLead(){const d=savedLead();return CONFIG.accessDays&&d&&Date.now()-d.ts<CONFIG.accessDays*DAY?d:null}
+
+  /* sends one record to Google Sheets (Apps Script) -> appendRow + email */
+  function sendLead(lead,f){
+    const url=CONFIG.leadWebhook;
+    if(!url){console.warn('CONFIG.leadWebhook is empty - nothing was sent to Google Sheets');return Promise.resolve()}
+    if(!/^https:\/\/script\.google(usercontent)?\.com\/macros\/s\/.+\/exec/.test(url)){
+      console.error('CONFIG.leadWebhook is not a Web App URL (needs .../macros/s/.../exec).');return Promise.resolve();
+    }
+    const isShare=!!(f&&f.kind==='share');
+    const payload={
+      fullName:lead.name,
+      email:lead.email,
+      phone:lead.phone,
+      clientType:lead.clientType,
+      agent:lead.agent||'',
+      action:isShare?'Share':'Download',
+      fileName:isShare?'':(f&&f.name)||'',
+      pageUrl:location.href,
+      source:isShare?'Website - Share form':'Website - Download form'
+    };
+    const body=JSON.stringify(payload);
+    try{
+      // keepalive: the request still completes even if the browser starts a download / leaves the page
+      return fetch(url,{method:'POST',mode:'no-cors',keepalive:true,headers:{'Content-Type':'text/plain;charset=utf-8'},body:body})
+        .catch(err=>{console.warn('Lead not sent:',err)});
+    }catch(err){console.warn('Lead not sent:',err);return Promise.resolve()}
+  }
+
+  /* share: open the share action straight away (needs the click), then log the lead.
+     download: log the lead FIRST, then start the file, so the record is never lost when the download takes over the tab. */
+  function deliver(lead,f){
+    if(f.kind==='share'){startDownload(f);sendLead(lead,f);return}
+    Promise.race([sendLead(lead,f),new Promise(r=>setTimeout(r,900))]).then(()=>startDownload(f));
+  }
+
+  function startDownload(f){
+    if(f.kind==='share'){doShare();return}
+    if(!f.url||f.url==='#'){toast('Thanks! This file will be available shortly.');return}
+    const a=document.createElement('a');a.href=f.url;a.download='';a.rel='noopener';
+    document.body.appendChild(a);a.click();a.remove();
+  }
+  function openGate(f){
+    pending=f;
+    const share=f.kind==='share';
+    $('gateTitle').textContent=share?'Your details to share':'Your details to download';
+    $('gateSubmit').textContent=share?'Unlock share':'Unlock download';
+    const keep=CONFIG.accessDays?' Access stays open for '+CONFIG.accessDays+' days on this device.':'';
+    $('gateSub').textContent=(share?'Share '+f.name+' — enter your details.':f.name+' — enter your details to download.')+keep;
+    const sv=savedLead();
+    if(sv){$('fName').value=sv.name||'';$('fEmail').value=sv.email||'';if(sv.code)$('fCode').value=sv.code;$('fPhone').value=sv.localPhone||'';$('fType').value=sv.clientType||'';$('fAgent').value=sv.agent||''}
+    form.querySelectorAll('.fld').forEach(x=>x.classList.remove('err'));
+    gate.classList.add('open');document.body.style.overflow='hidden';
+    setTimeout(()=>{if(!form.contains(document.activeElement))$('fName').focus()},50);
+  }
+  function closeGate(){gate.classList.remove('open');document.body.style.overflow='';pending=null}
+
+  window.requestDownload=function(f){
+    const saved=getLead();
+    if(saved){deliver(saved,f)}   // already unlocked: still log every download / share
+    else openGate(f);
+  };
+
+  document.addEventListener('click',e=>{
+    const a=e.target.closest('a[data-dl]');if(!a)return;
+    e.preventDefault();
+    requestDownload({name:a.dataset.name||a.textContent.trim(),url:a.getAttribute('href')});
+  });
+  $('gateCancel').addEventListener('click',closeGate);
+  gate.addEventListener('click',e=>{if(e.target===gate)closeGate()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&gate.classList.contains('open'))closeGate()});
+
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const v={name:$('fName').value.trim(),email:$('fEmail').value.trim(),code:$('fCode').value,phone:$('fPhone').value.replace(/[\s\-()]/g,''),type:$('fType').value,agent:$('fAgent').value.trim()};
+    const bad={
+      'f-name':v.name.length<2,
+      'f-email':!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.email),
+      'f-phone':!/^\d{6,12}$/.test(v.phone),
+      'f-type':!v.type
+    };
+    let ok=true;for(const k in bad){$(k).classList.toggle('err',bad[k]);if(bad[k])ok=false}
+    if(!ok){const first=form.querySelector('.fld.err');if(first){first.scrollIntoView({block:'center',behavior:'smooth'});const i=first.querySelector('input,select');if(i)i.focus()}return}
+    const lead={name:v.name,email:v.email,phone:v.code+v.phone,code:v.code,localPhone:v.phone,clientType:v.type,agent:v.agent,ts:Date.now()};
+    try{localStorage.setItem(KEY,JSON.stringify(lead))}catch(err){}
+    const f=pending;
+    closeGate();form.reset();
+    if(f)deliver(lead,f);
+  });
+})();
+</script>
+</body>
+</html>
